@@ -19,7 +19,16 @@ real AWS CloudWatch data from the **Numenta Anomaly Benchmark (NAB)**.
 - **scikit-learn** — Isolation Forest
 - **Plotly** — interactive visualizations
 - **Streamlit** — dashboard framework
+  
+## Methodology
 
+| Method | Approach | Strength | Trade-off |
+|---|---|---|---|
+| Rolling Z-Score | Flags points beyond N standard deviations from a rolling mean | Simple, cheap, fully explainable | Sensitive to threshold choice |
+| IQR | Flags points outside 1.5× interquartile range | Robust to skewed distributions | Less sensitive to gradual drift |
+| Isolation Forest | ML-based, isolates outliers using engineered features (value, rolling mean/std, rate of change) | Catches subtler, multivariate anomalies | Harder to explain to non-technical stakeholders |
+
+Each method is scored against NAB's labeled anomaly timestamps using a tolerance window, producing precision/recall/F1 for direct comparison.
 ## Setup
 
 ```bash
