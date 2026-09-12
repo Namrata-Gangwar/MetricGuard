@@ -13,6 +13,13 @@ real AWS CloudWatch data from the **Numenta Anomaly Benchmark (NAB)**.
 - Lets you tune thresholds live and see how detection quality changes
 - Includes a "business narrative" panel explaining trade-offs between methods
 
+## Tech stack
+
+- **Python** — pandas, NumPy for data handling
+- **scikit-learn** — Isolation Forest
+- **Plotly** — interactive visualizations
+- **Streamlit** — dashboard framework
+
 ## Setup
 
 ```bash
