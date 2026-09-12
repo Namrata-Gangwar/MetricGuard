@@ -3,7 +3,7 @@
 An interactive dashboard for detecting anomalies in time-series metrics, built on
 real AWS CloudWatch data from the **Numenta Anomaly Benchmark (NAB)**.
 
-**Live app:**[metricguard.streamlit.app](https://metricguard-qbkjf8gppadcpzv6cecee8.streamlit.app)
+**Live app:**[metricguard.app](https://metricguard-qbkjf8gppadcpzv6cecee8.streamlit.app)
 
 ## What it does
 
