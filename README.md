@@ -40,11 +40,8 @@ Then open the local URL Streamlit prints (usually `http://localhost:8501`).
 
 ## Data
 
-Sample data is bundled in `sample_data/` — five real NAB series (EC2 CPU, EC2 network,
-RDS CPU, ELB request count) plus the ground-truth label file. To add more series,
-download additional CSVs from the [NAB repo](https://github.com/numenta/NAB/tree/master/data)
-and drop them into `sample_data/`, then add an entry to `FRIENDLY_NAMES` and
-`LABEL_KEY_PREFIX` in `app.py`.
+Sample data (`sample_data/`) is 5 real, labeled time series from NAB's `realAWSCloudwatch` set, plus the ground-truth label file. Source: [numenta/NAB](https://github.com/numenta/NAB).
+
 
 
 ## Citation
